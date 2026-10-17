@@ -34,3 +34,363 @@ h1,h2,h3,p{margin-top:0}.hero h1{font-family:var(--display);font-size:clamp(48px
 @media(max-width:600px){.topbar{height:72px;padding:0 18px}.brand-mark{width:32px;height:32px}.brand-name{font-size:15px}.brand-name small{font-size:6px;letter-spacing:1.1px}.desktop-nav{display:none}.top-cta{font-size:9px;padding:10px 11px}.top-cta span{margin-left:8px}.hero{display:flex;flex-direction:column;align-items:stretch;padding:65px 21px 46px;min-height:auto}.hero-copy{order:1}.hero .eyebrow{font-size:8px;letter-spacing:1.4px}.hero h1{font-size:clamp(45px,12vw,64px);letter-spacing:-3px;margin:24px 0 20px}.hero-description{font-size:13px;line-height:1.8}.hero-actions{gap:19px}.button-primary{padding:14px 13px;font-size:10px}.button-primary span{margin-left:12px}.button-quiet{font-size:10px}.hero-footnote{margin-top:36px;font-size:7px}.hero-art{order:2;height:300px;margin-top:28px}.orbit-a{width:220px;height:220px}.orbit-b{width:290px;height:150px}.orbit-c{height:280px;width:190px}.core{width:112px;height:112px}.core img{width:66px;height:66px}.label-top{top:12px;right:3px;font-size:7px}.label-bottom{bottom:10px;left:4px;font-size:7px}.cross-one{top:50px;left:30px}.cross-two{bottom:48px;right:30px}.hero-index{right:21px;bottom:10px}.category-strip{margin:0 21px;padding:19px 0}.category-links{gap:13px 17px}.category-links a{font-size:10px}.latest-section{margin:0 21px;padding:65px 0}.section-heading{align-items:end;gap:12px}.section-heading h2{font-size:34px;letter-spacing:-1.5px}.view-all{white-space:nowrap;font-size:9px}.view-all span{margin-left:7px}.story-grid{grid-template-columns:1fr;gap:35px}.story-art{height:220px}.story-card h3{font-size:21px}.story-card p{min-height:0;font-size:12px}.story-meta{font-size:8px}.editor-note{margin-top:45px;padding:17px 14px;gap:12px}.editor-note strong{font-size:11px}.editor-note p{line-height:1.7}.manifesto{padding:45px 21px;grid-template-columns:1fr;gap:18px}.manifesto-orb{width:56px;height:56px;font-size:21px}.manifesto h2{font-size:32px}.manifesto>p{grid-column:1;font-size:12px}.footer{margin:0 21px;gap:12px;flex-wrap:wrap;padding:24px 0}.footer>span{font-size:7px}.footer-brand{font-size:11px}}
 @media(min-width:601px) and (max-width:760px){.story-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.story-card:last-child{grid-column:1/-1}.story-card:last-child .story-art{height:200px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* =========================================
+LORELUMINION 2.0 — READABILITY UPGRADE
+========================================= */
+
+/* Improve overall text rendering */
+html {
+font-size: 16px;
+scroll-padding-top: 100px;
+}
+
+body {
+font-size: 16px;
+line-height: 1.7;
+}
+
+/* Header and navigation */
+.topbar {
+min-height: 88px;
+}
+
+.brand-name {
+font-size: 19px;
+}
+
+.brand-name small {
+font-size: 9px;
+letter-spacing: 1.4px;
+}
+
+.desktop-nav {
+font-size: 15px;
+gap: 30px;
+}
+
+.top-cta {
+font-size: 14px;
+padding: 14px 18px;
+}
+
+/* Hero section */
+.hero h1 {
+line-height: 1.08;
+}
+
+.hero-description {
+font-size: 17px;
+line-height: 1.85;
+max-width: 480px;
+}
+
+.eyebrow {
+font-size: 11px;
+letter-spacing: 1.5px;
+}
+
+.button-primary,
+.button-quiet {
+font-size: 14px;
+}
+
+.hero-footnote {
+font-size: 10px;
+line-height: 1.8;
+}
+
+/* Category navigation */
+.strip-label {
+font-size: 10px;
+}
+
+.category-links a {
+font-size: 14px;
+line-height: 1.7;
+}
+
+/* Section headings */
+.section-heading .eyebrow {
+font-size: 10px;
+}
+
+.section-heading h2 {
+line-height: 1.2;
+}
+
+.view-all {
+font-size: 14px;
+}
+
+/* Article cards */
+.story-meta {
+font-size: 11px;
+line-height: 1.7;
+}
+
+.story-card h3 {
+font-size: 21px;
+line-height: 1.5;
+letter-spacing: -0.4px;
+}
+
+.story-card p {
+font-size: 15px;
+line-height: 1.85;
+min-height: 0;
+}
+
+.read-link {
+font-size: 14px;
+padding: 10px 0;
+}
+
+.art-number,
+.art-caption {
+font-size: 10px;
+}
+
+.editor-note strong {
+font-size: 15px;
+line-height: 1.6;
+}
+
+.editor-note p {
+font-size: 14px;
+line-height: 1.8;
+}
+
+/* About section */
+.manifesto .eyebrow {
+font-size: 10px;
+}
+
+.manifesto > p {
+font-size: 15px;
+line-height: 1.9;
+}
+
+/* Footer */
+.footer {
+font-size: 10px;
+line-height: 1.8;
+}
+
+.footer-brand {
+font-size: 15px;
+}
+
+/* Tablet adjustments */
+@media (min-width: 601px) and (max-width: 900px) {
+.hero-description {
+font-size: 16px;
+}
+
+.category-links a {
+font-size: 14px;
+}
+
+.story-card h3 {
+font-size: 19px;
+}
+
+.story-card p {
+font-size: 14px;
+}
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+.topbar {
+min-height: 76px;
+height: auto;
+padding: 14px 18px;
+gap: 12px;
+}
+
+.brand-name {
+font-size: 16px;
+}
+
+.brand-name small {
+font-size: 7px;
+letter-spacing: 1px;
+}
+
+.top-cta {
+font-size: 12px;
+padding: 11px 12px;
+white-space: nowrap;
+}
+
+.hero {
+padding: 52px 21px 45px;
+}
+
+.hero .eyebrow {
+font-size: 10px;
+line-height: 1.8;
+}
+
+.hero h1 {
+font-size: clamp(42px, 10.5vw, 58px);
+letter-spacing: -2.2px;
+line-height: 1.12;
+margin: 25px 0 22px;
+}
+
+.hero-description {
+font-size: 16px;
+line-height: 1.85;
+}
+
+.hero-actions {
+flex-wrap: wrap;
+gap: 18px;
+}
+
+.button-primary,
+.button-quiet {
+font-size: 13px;
+}
+
+.hero-footnote {
+font-size: 9px;
+letter-spacing: 1px;
+margin-top: 32px;
+}
+
+.category-strip {
+padding: 24px 0;
+}
+
+.strip-label {
+font-size: 10px;
+margin-bottom: 16px;
+}
+
+.category-links {
+gap: 12px 18px;
+}
+
+.category-links a {
+font-size: 13px;
+white-space: normal;
+}
+
+.latest-section {
+padding: 55px 0 60px;
+}
+
+.section-heading {
+align-items: flex-start;
+flex-wrap: wrap;
+gap: 18px;
+margin-bottom: 30px;
+}
+
+.section-heading .eyebrow {
+font-size: 10px;
+}
+
+.section-heading h2 {
+font-size: clamp(30px, 8vw, 38px);
+letter-spacing: -1.3px;
+line-height: 1.25;
+}
+
+.view-all {
+font-size: 13px;
+}
+
+.story-grid {
+gap: 42px;
+}
+
+.story-art {
+height: 230px;
+}
+
+.story-meta {
+font-size: 10px;
+margin: 18px 0 12px;
+flex-wrap: wrap;
+}
+
+.story-card h3 {
+font-size: 22px;
+line-height: 1.45;
+margin-bottom: 12px;
+}
+
+.story-card p {
+font-size: 16px;
+line-height: 1.85;
+margin-bottom: 20px;
+}
+
+.read-link {
+font-size: 14px;
+}
+
+.art-number,
+.art-caption {
+font-size: 9px;
+}
+
+.editor-note {
+margin-top: 45px;
+padding: 20px 16px;
+align-items: flex-start;
+}
+
+.editor-note strong {
+font-size: 14px;
+}
+
+.editor-note p {
+font-size: 14px;
+line-height: 1.8;
+}
+
+.manifesto {
+padding: 42px 21px;
+gap: 20px;
+}
+
+.manifesto .eyebrow {
+font-size: 10px;
+line-height: 1.8;
+}
+
+.manifesto h2 {
+font-size: clamp(28px, 7.5vw, 34px);
+line-height: 1.35;
+letter-spacing: -1px;
+}
+
+.manifesto > p {
+font-size: 15px;
+line-height: 1.9;
+}
+
+.footer {
+gap: 16px;
+font-size: 9px;
+line-height: 1.8;
+}
+
+.footer-brand {
+font-size: 14px;
+}
+
+.footer > span {
+font-size: 9px;
+}
+}
+
+/* Keep keyboard navigation visible */
+a:focus-visible {
+outline: 2px solid var(--gold);
+outline-offset: 4px;
+}
